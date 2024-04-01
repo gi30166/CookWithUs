@@ -21,7 +21,7 @@ Testing:
 
 The application is testable through Insomnia : http://localhost:8081
 
-Description of the project:
+Description of the project: 
 
 MakeupClasses is a project that we created for Makeup Classes with the aim that each person can have the opportunity to follow their favorite makeup artist. A makeup class is a course of teaching in the application of make-up. This app gives the opportunity to book a class for anyone who wants to become a professional makeup artist in the future. In the end of a certain class everyone gets a special gift.
 
