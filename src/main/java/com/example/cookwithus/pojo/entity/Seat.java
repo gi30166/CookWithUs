@@ -1,4 +1,4 @@
-package com.example.MakeupClasses.pojo.entity;
+package com.example.cookwithus.pojo.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;

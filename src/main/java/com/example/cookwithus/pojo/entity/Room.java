@@ -1,4 +1,4 @@
-package com.example.cookwithus.pojo;
+package com.example.cookwithus.pojo.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
