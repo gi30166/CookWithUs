@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.sql.Time;
 import java.util.Date;
 import java.util.List;
-
+import java.util.UUID;
 @Service
 public class DefaultBookingService implements BookingService {
 
@@ -30,7 +30,7 @@ public class DefaultBookingService implements BookingService {
 
     @Override
     public Booking save(BookingInput bookingInput) {
-        String Nr = bookingInput.getNr();
+        String Nr = generateUniqueBookingNumber();
         Date date = bookingInput.getDate();
         Time time = bookingInput.getTime();
         Booking booking = new Booking();
@@ -63,6 +63,12 @@ public class DefaultBookingService implements BookingService {
             this.bookingRepository.delete(booking);//largohet prej databaze
         }
     }
+    private String generateUniqueBookingNumber() {
+        UUID uuid = UUID.randomUUID();
+        String bookingNumber = uuid.toString().replace("-", "");
+        return bookingNumber;
+    }
+
 }
 
 

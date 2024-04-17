@@ -14,11 +14,11 @@ public class Realization {
 
     @Id
     @Column(
-            name = "RealizationDate"
+            name = "realization_date"
     )
     private Date date;
     @Column(
-            name = "RealizationTime"
+            name = "realization_time"
     )
 
     private Time time;
@@ -26,14 +26,14 @@ public class Realization {
     @ManyToOne
     @JsonManagedReference
     @JoinColumn(
-            name = "RLessonName"
+            name = "r_lesson_name"
     )
     private Lesson lesson;
 
     @ManyToOne
     @JsonManagedReference
     @JoinColumn(
-            name = "RRoomNr"
+            name = "r_room_nr"
     )
     private Room room;
 

@@ -10,17 +10,17 @@ public class Client {
 
     @Id
     @Column(
-            name = "ClientName"
+            name = "client_name"
     )
     private String name;
     @Column(
-            name = "ClientSurname"
+            name = "client_surname"
     )
     private String surname;
 
 
     @Column(
-            name = "ClientEmail"
+            name = "client_email"
     )
     private String email;
 

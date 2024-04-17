@@ -11,11 +11,11 @@ import java.util.List;
 public class Room {
     @Id
     @Column(
-            name = "RoomNumber"
+            name = "room_number"
     )
     private Integer nr;
     @Column(
-            name = "RoomCapacity"
+            name = "room_capacity"
     )
     private Integer capacity;
     @OneToMany(

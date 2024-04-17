@@ -12,7 +12,7 @@ public class Gift {
 
     @Id
     @Column(
-            name = "Products"
+            name = "products"
     )
     private String products;
 
@@ -20,27 +20,27 @@ public class Gift {
 
     @OneToOne
     @JsonBackReference
-    @JoinColumn(name = "GBookingNr")
+    @JoinColumn(name = "g_booking_nr")
     private Booking booking;
 
     @ManyToOne
     @JsonManagedReference
     @JoinColumn(
-            name = "GClientName"
+            name = "g_client_name"
     )
     private Client client;
 
     @ManyToOne
     @JsonManagedReference
     @JoinColumn(
-            name = "GLessonName"
+            name = "g_lesson_name"
     )
     private Lesson lesson;
 
     @ManyToOne
     @JsonManagedReference
     @JoinColumn(
-            name = "GSeatNr"
+            name = "g_seat_nr"
     )
     private Seat seat;
 

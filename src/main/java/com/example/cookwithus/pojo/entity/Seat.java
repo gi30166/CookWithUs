@@ -13,13 +13,13 @@ import java.util.List;
 public class Seat {
     @Id
     @Column(
-            name = "SeatNumber"
+            name = "seat_number"
     )
     private Integer number;
     @ManyToOne
     @JsonManagedReference
     @JoinColumn(
-            name = "RoomNumber"
+            name = "room_number"
     )
     private Room room;
 

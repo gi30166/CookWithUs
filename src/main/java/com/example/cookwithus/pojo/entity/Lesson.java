@@ -12,11 +12,11 @@ import java.util.List;
 public class Lesson {
     @Id
     @Column(
-            name = "LessonName"
+            name = "lesson_name"
     )
     private String name;
     @Column(
-            name = "LessonCategory"
+            name = "lesson_category"
     )
     private String category;
 

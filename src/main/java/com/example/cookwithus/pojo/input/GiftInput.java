@@ -18,4 +18,5 @@ public class GiftInput {
     public void setProducts(String products) {
         this.products = products;
     }
+
 }

@@ -3,6 +3,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
+
 import java.sql.Time;
 import java.util.Date;
 
@@ -10,33 +11,33 @@ import java.util.Date;
 @Table(name="booking")
 public class Booking {
     @Id
-    @Column(name = "BookingNr")
+    @Column(name = "booking_nr")
     private String nr;
 
-    @Column(name = "BookingDate")
+    @Column(name = "booking_date")
     private Date date;
 
-    @Column(name = "BookingTime")
+    @Column(name = "booking_time")
     private Time time;
 
     @ManyToOne
     @JsonManagedReference
-    @JoinColumn(name = "BClientName")
+    @JoinColumn(name = "b_client_name")
     private Client client;
 
     @ManyToOne
     @JsonManagedReference
-    @JoinColumn(name = "BLessonName")
+    @JoinColumn(name = "b_lesson_name")
     private Lesson lesson;
 
     @OneToOne
     @JsonBackReference
-    @JoinColumn(name = "BookingSeatNr")
+    @JoinColumn(name = "booking_seat_nr")
     private Seat seat;
 
     @OneToOne
     @JsonBackReference
-    @JoinColumn(name = "BGiftProducts")
+    @JoinColumn(name = "b_gift_products")
     private Gift gift;
 
 
